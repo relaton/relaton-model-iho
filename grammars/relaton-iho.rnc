@@ -8,7 +8,7 @@ editorialgroup = element editorialgroup {
   (committee | workgroup | commission)+
 }
 
-BibDataExtensionType =
+BibDataExtensionType &=
         ## The period during which comments may be submitted to the document draft
         commentperiod?
 
