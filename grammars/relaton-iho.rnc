@@ -8,11 +8,11 @@ editorialgroup = element editorialgroup {
   (committee | workgroup | commission)+
 }
 
+}
+
 BibDataExtensionType &=
         ## The period during which comments may be submitted to the document draft
         commentperiod?
-
-}
 
 committee = element committee { IHO_Group }
 workgroup = element workgroup { IHO_Group }
