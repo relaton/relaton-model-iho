@@ -2,7 +2,7 @@ include "biblio-standoc.rnc" {
 
 DocumentType =
 "policy-and-procedures" | "best-practices" | "supporting-document" | "report" | "legal" | "directives" | "proposal" |
-        "standard"
+        "standard" | "specification" | "resolution" | "regulation"
 
 editorialgroup = element editorialgroup {
   (committee | workgroup | commission)+
