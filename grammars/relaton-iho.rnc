@@ -11,8 +11,8 @@ editorialgroup = element editorialgroup {
 structuredidentifier = element structuredidentifier {
   element docnumber { text },
   element part { text }?,
-  element annexid { text }?
-  element appendixid { text }?
+  element annexid { text }?,
+  element appendixid { text }?,
   element supplementid { text }?
 }
 
