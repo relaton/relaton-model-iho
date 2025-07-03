@@ -8,6 +8,14 @@ editorialgroup = element editorialgroup {
   (committee | workgroup | commission)+
 }
 
+structuredidentifier = element structuredidentifier {
+  element docnumber { text },
+  element part { text }?,
+  element annex { text }?
+  element appendix { text }?
+  element supplement { text }?
+}
+
 }
 
 BibDataExtensionType &=
