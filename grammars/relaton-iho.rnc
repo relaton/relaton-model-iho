@@ -4,10 +4,6 @@ DocumentType =
 "policy-and-procedures" | "best-practices" | "supporting-document" | "report" | "legal" | "directives" | "proposal" |
         "standard" | "specification" | "resolution" | "regulation"
 
-editorialgroup = element editorialgroup {
-  (committee | workgroup | commission)+
-}
-
 structuredidentifier = element structuredidentifier {
   element docnumber { text },
   element part { text }?,
@@ -21,16 +17,6 @@ structuredidentifier = element structuredidentifier {
 BibDataExtensionType &=
         ## The period during which comments may be submitted to the document draft
         commentperiod?
-
-committee = element committee { IHO_Group }
-workgroup = element workgroup { IHO_Group }
-commission = element commission { IHO_Group }
-
-IHO_Group =
-  element name { text }?,
-  element abbreviation { text },
-  (committee | workgroup | commission)?
-
 
 ## The period during which comments may be submitted to the document draft
 commentperiod = element commentperiod {
